@@ -10,7 +10,7 @@ import java.security.cert.CertificateException
 import java.security.cert.X509Certificate
 
 class HealthSpec extends Specification {
-  def baseUrl = System.getenv().BASE_URL ?: "http://localhost:8080"
+  def baseUrl = System.getenv().BASE_URL ?: "http://127.0.0.1:8081"
 
   def "should pass health check"() {
     given:
